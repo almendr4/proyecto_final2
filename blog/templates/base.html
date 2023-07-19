@@ -1,0 +1,296 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/mediumish.css' %}">
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+<script src="{% static 'js/mediumish.js' %}"></script>
+
+<!-- --------------------------- -->
+
+
+<!DOCTYPE html>
+<html lang="es-ar">
+
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="static/img/favicon.png">
+
+<title>Blog&middot;Tivo</title>
+
+<!-- Bootstrap core CSS -->
+<link href="{% static 'static/css/bootstrap.min.css' %}" rel="stylesheet">
+<!-- Fonts -->
+<link href="{% static 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' %}" rel="stylesheet">
+<link href="{% static 'https://fonts.googleapis.com/css?family=Righteous' %}" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="{% static 'static/css/mediumish.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<!-- Begin Nav
+================================================== -->
+<nav class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="container">
+	<!-- Begin Logo -->
+	<a class="navbar-brand" href="http://127.0.0.1:8000/">
+
+	<img src="static/img/logo.jpg" alt="logo">
+	</a>
+	<!-- End Logo -->
+	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+		<!-- Begin Menu -->
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+			<a class="nav-link" href="    ">Stories <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="{% url 'articulo' %}">Articulo</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="author.html">Author</a>
+			</li>
+		</ul>
+		<!-- End Menu -->
+
+
+		<!-- Begin Search -->
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="text" placeholder="Search">
+			<span class="search-icon"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path></svg></span>
+		</form>
+		<!-- End Search -->
+	</div>
+</div>
+</nav>
+<!-- End Nav
+================================================== -->
+
+<!-- Begin Site Title
+================================================== -->
+<div class="container">
+	<div class="mainheading">
+		<h1 class="sitetitle">Blog&middot;Tivo </h1>
+		<p class="lead">
+      Espacio virtual para inspirar y motivar a la acción
+		</p>
+	</div>
+<!-- End Site Title
+================================================== -->
+
+
+
+	<!-- Begin Featured
+	================================================== -->
+
+	<!-- para centrar el texto  -->
+	<style>
+		.section-title {
+			text-align: center;
+		}
+	</style>
+	
+	<section class="featured-posts">
+		<div class="section-title">
+			<h2><span>¿Estás listo para inspirar o inspirarte? ¡Adelante, es hora de hacer la diferencia!</span></h2>
+		</div>
+	</section>
+	
+	<div class="card-columns listfeaturedtag">
+
+		<!-- begin post -->
+		<div class="card">
+			<div class="row">
+				<div class="col-md-5 wrapthumbnail">
+					<a href="{% url 'articulo' %}">
+						<div class="thumbnail" style="background-image:url(static/img/demopic/1.jpg);">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-7">
+					<div class="card-block">
+						<h2 class="card-title"><a href="{% url 'articulo' %}">We're living some strange times</a></h2>
+						<h4 class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h4>
+						<div class="metafooter">
+							<div class="wrapfooter">
+								<span class="meta-footer-thumb">
+
+            
+								<a href="author.html"><img class="author-thumb" src="{% static 'avatar.jpg' %}" alt="Sal"></a>
+								</span>
+								<span class="author-meta">
+								<span class="post-name"><a href="author.html">Steve</a></span><br/>
+								<span class="post-date">22 July 2017</span><span class="dot"></span><span class="post-read">6 min read</span>
+								</span>
+								<span class="post-read-more"><a href="articulo.html" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end post -->
+
+		<!-- begin post -->
+		<div class="card">
+			<div class="row">
+				<div class="col-md-5 wrapthumbnail">
+					<a href="{% url 'articulo' %}">
+						<div class="thumbnail" style="background-image:url(static/img/demopic/2.jpg);">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-7">
+					<div class="card-block">
+						<h2 class="card-title"><a href="{% url 'articulo' %}">The beauty of this world is in your heart</a></h2>
+						<h4 class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h4>
+						<div class="metafooter">
+							<div class="wrapfooter">
+								<span class="meta-footer-thumb">
+								<a href="author.html"><img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x" alt="Sal"></a>
+								</span>
+								<span class="author-meta">
+								<span class="post-name"><a href="author.html">Jane</a></span><br/>
+								<span class="post-date">22 July 2017</span><span class="dot"></span><span class="post-read">6 min read</span>
+								</span>
+								<span class="post-read-more"><a href="{% url 'articulo' %}" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end post -->
+
+		<!-- begin post -->
+		<div class="card">
+			<div class="row">
+				<div class="col-md-5 wrapthumbnail">
+					<a href="{% url 'articulo' %}">
+						<div class="thumbnail" style="background-image:url(static/img/demopic/3.jpg);">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-7">
+					<div class="card-block">
+						<h2 class="card-title"><a href="articulo.html">Dreaming of Las Vegas Crazyness</a></h2>
+						<h4 class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h4>
+						<div class="metafooter">
+							<div class="wrapfooter">
+								<span class="meta-footer-thumb">
+								<a href="author.html"><img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x" alt="Sal"></a>
+								</span>
+								<span class="author-meta">
+								<span class="post-name"><a href="author.html">Mary</a></span><br/>
+								<span class="post-date">22 July 2017</span><span class="dot"></span><span class="post-read">6 min read</span>
+								</span>
+								<span class="post-read-more"><a href="articulo.html" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end post -->
+
+		<!-- begin post -->
+		<div class="card">
+			<div class="row">
+				<div class="col-md-5 wrapthumbnail">
+					<a href="articulo.html">
+						<div class="thumbnail" style="background-image:url(static/img/demopic/4.jpg);">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-7">
+					<div class="card-block">
+						<h2 class="card-title"><a href="articulo.html">San Francisco at its best view in all seasons</a></h2>
+						<h4 class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h4>
+						<div class="metafooter">
+							<div class="wrapfooter">
+								<span class="meta-footer-thumb">
+								<a href="author.html"><img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x" alt="Sal"></a>
+								</span>
+								<span class="author-meta">
+								<span class="post-name"><a href="author.html">Sal</a></span><br/>
+								<span class="post-date">22 July 2017</span><span class="dot"></span><span class="post-read">6 min read</span>
+								</span>
+								<span class="post-read-more"><a href="articulo.html" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end post -->
+
+	</div>
+	</section>
+	<!-- End Featured
+	================================================== -->
+
+	<!-- Begin List Posts
+	================================================== -->
+	<section class="recent-posts">
+	<div class="section-title">
+		<h2><span>¿Quiénes somos? Descubre nuestra pasión por el cambio.</span></h2>
+	</div>
+  <img class="profile-img" src="static/home.gif" alt="...">
+ <!-- About Section-->
+ <section class="bg-light py-5">
+  <div class="container px-5">
+      <div class="row gx-5 justify-content-center">
+          <div class="col-xxl-8">
+              <div class="text-center my-5">
+                  <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Blog&middot;Tivo</span></h2>
+
+                  <p class="lead fw-light mb-4">Somos un equipo apasionado de personas dedicadas a impulsar el cambio y promover el bienestar en nuestra comunidad. Con una sólida convicción de que juntos podemos marcar la diferencia, trabajamos incansablemente para abordar desafíos sociales y contribuir al desarrollo sostenible.</p>
+                  <p class="text-muted">A través de nuestro blog, buscamos inspirar y empoderar a las personas, brindando información relevante, historias inspiradoras y recursos útiles. Creemos en el poder de la información y la educación como catalizadores del cambio social.</p>
+                  <div class="d-flex justify-content-center fs-2 gap-4">
+                      <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
+                      <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
+                      <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+</main>
+<!-- Footer-->
+	<!-- Begin Footer
+	================================================== -->
+	<div class="footer">
+		<p class="pull-left">
+			 Copyright &copy; 2017 Your Website Name
+		</p>
+		
+		<div class="clearfix">
+		</div>
+	</div>
+	<!-- End Footer
+	================================================== -->
+
+</div>
+<!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js' %}" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/ie10-viewport-bug-workaround.js' %}"></script>
+</body>
+</html>
+
+

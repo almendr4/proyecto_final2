@@ -1,8 +1,21 @@
+
+<!-- plantilla_hija.html -->
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenido %}
+<!-- contenido personalizado del bloque "contenido" -->
+{% endblock %}
+
+
+
+
 <!DOCTYPE html>
 <html lang="es-ar">
 
-<head>
-    <title>Proyecto final</title>
+<!-- <head>
+    <title>Pagina Leila probando</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
@@ -18,4 +31,31 @@
     </main>
     
 </body>
-</html>
+</html> -->
+<!-- 
+</header> 
+<main>
+
+    
+    <h1>Articulos</h1>
+    <ul>
+    
+         {% for articulo in articulos %}
+    
+            <h4> {{ articulo.id}} </h4>
+            <li> <strong>{{ articulo.titule }}</strong></li>
+            <li><strong>{{ articulo.resumen }}</strong></li>
+            <li><strong> {{ articulo.contenido }}</strong></li>
+            <img src="{{ articulo.imagen.url}}" alt=""    
+            <br>
+    
+        {% empty %} 
+            <li>No hay articulos</li>
+    
+         {% endfor %}
+    
+    </ul>
+    
+    
+</mains 
+<footer> -->
